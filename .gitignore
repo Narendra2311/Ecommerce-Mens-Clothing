@@ -33,3 +33,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Ignore IDE and system junk
+.DS_Store
+nbproject/
