@@ -1,0 +1,88 @@
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* Root variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --main-color: #c8815f;
+    --big-font: 4.5rem;
+    --h2-font: 3.3rem;
+    --h3-font: 2rem;
+    --normal-font: 1rem;
+}
+
+/* Body styles */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header-specific styles */
+header {
+    width: 1298px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 14%;
+    transition: all .35s ease;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+/* Navigation list styles */
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    font-size: var(--normal-font);
+    transition: all .36s ease;
+}
+
+/* Navigation link hover styles */
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+/* Header icon styles */
+.header-icons i {
+    font-size: 32px;
+    color: var(--text-color);
+    margin-right: 10px;
+    transition: all .36s ease;
+}
+
+/* Header icon hover styles */
+.header-icons i:hover {
+    color: var(--main-color);
+}
+
+/* Sticky header styles */
+header.sticky {
+    background: var(--bg-color);
+    padding: 14px 14%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
